@@ -62,6 +62,13 @@ x = "hello world !"
 print(x.split())    # ['hello', 'world', '!']
 print(x.split('l')) # ['he', '', 'o wor', 'd !']
 
+x = 'hihihihihhhihihihhh'
+#['h', 'h', 'h', 'h', 'hhh', 'h', 'h', 'hhh']
+print(x.split('i')) 
+
+#('h', 'i', 'hihihihhhihihihhh')
+print(x.partition('i')) #first instance of i
+
 """ .format() """
 print('This is a string {}'.format('INSERTED'))
 print('The {2} {1} {0} {0}'.format('fox', 'brown', 'quick'))
@@ -72,6 +79,28 @@ print("the result was {r:1.3f}".format(r=result)) #0.129
 
 """ f-strings """
 print(f'My result is {result}, so {x}')
+
+s = 'hello world'
+z = s.count('o') 
+print(z) #2
+z = s.find('w') 
+print(z) #6
+
+z = s.center(20, 'z')
+print(z) #zzzzhello worldzzzzz
+
+print('hello\this'.expandtabs())
+
+a = 'om the string'
+print( a.isalnum() ) #false
+print( a.isalpha() ) #false
+print( a.islower() ) #true
+print( a.isupper() ) #true
+print( a.isspace() ) #false
+print( a.title() )   #Om The String
+print( a.endswith('g') ) #true
+print( a[-1] == 'o' )    #true
+
 
 
 
