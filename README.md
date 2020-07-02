@@ -4,9 +4,9 @@
 This repo is my scrapbook for Python [Udemy course](https://www.udemy.com/course/complete-python-bootcamp/learn/lecture/20447403#overview)
 , course [Jupiter notebooks](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp)
 
-## Course creeator
+## Course creator
 Jose Marcial Portilla
 
 ## License
-Check http://www.pieriandata.com for more details
+http://www.pieriandata.com for more details
 

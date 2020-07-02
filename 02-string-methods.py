@@ -5,15 +5,13 @@ stop is the index will go up to (but not include)
 step is the size of the jump you take
 """
 
-#my_string = 'i'm going for a run'      #error single quoutes 
-#my_string = 'I\'m going for a run'     #will work
-my_string = "I'm going for a run"
+my_string = "I\'m going for a run"
 print(my_string)
 
 my_sting_new_line = "hello \npeople"
 print(my_sting_new_line)
 
-my_sting_tab = "hello \tpeople"
+my_sting_tab = "\thello \t\tpeople"
 print(my_sting_tab)
 
 my_string = "Please get my length"
@@ -26,22 +24,18 @@ print(my_string[-3])  #g
 my_string = "ABCDEFGHK"
 print(my_string[2:])  #will print everything after [2] CDEFG
 print(my_string[:5])  #will print everything before [5] ABCDE
-
 my_string = "ABCDEFGHK"
 print(my_string[2:6]) #CDEF
-
 my_string = "112233445566778899"
 print(my_string[::3]) #go to the end with the step 3
-
 my_string = "112233445566778899"
 print(my_string[2:7:2]) #234
-
 my_string = "112233445566778899"
 print(my_string[::-1]) #998877665544332211 REVERSED
 
-"""  Immutability  """
+"""  String Immutability  """
 name = "Sam"
-#name[0] = "P" #Error
+#name[0] = "P" #TypeError: 'str' object does not support item assignment
 last_letters = name[1::] 
 print(last_letters) #am
 print('P' + last_letters) #Pam
@@ -57,9 +51,12 @@ print(put_me_into_sleep * 10) #zzzzzzzzzz
 
 x = x.upper()       #HELLO WORLD ITS GOOD OUTSIDE
 print(x)
-
 x = x.lower()
 print(x)            #hello world its good outside
+x = x.capitalize()  
+print(x)            #Hello world its good outside
+x = x.title()
+print(x)            #Hello World Its Good Outside
 
 x = "hello world !"
 print(x.split())    # ['hello', 'world', '!']
