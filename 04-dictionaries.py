@@ -31,7 +31,7 @@ print(f"apple price ${prices_lookup['apple'] }")
 print(f"orange price ${prices_lookup['oranges'] }")
 print(f"milk price ${prices_lookup['milk'] }")
 
-                        print('********** TOUCHING DICT ***********')
+print('********** TOUCHING DICT ***********')
 #warmup
 d = {
     'k1': ['a','b','c'],
@@ -96,4 +96,23 @@ print(d['k1'][2]['k2'][1]['tough'][2][0])
 # does some one know how get to the 🍿 😬 ???
 get_the_present = {'a1cb1':[1,2,{'a2bc1':['this but not that',{'::-1[({% self %})]':['append('')',False,['🍿']]}]}]}
 print(get_the_present['a1cb1'][2]['a2bc1'][1]['::-1[({% self %})]'][2][0])
+
+
+""" Advanced Dictionaries """
+#Dictionary Comprehensions
+print({x:x**2 for x in range(10)})
+#{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+print( { k:v**2 for k,v in zip(['a','b'], range(2))})
+#{'a': 0, 'b': 1}
+
+d = {'k1':1,'k2':2}
+
+for k in d.keys():
+    print(k)
+
+for v in d.values():
+    print(v)
+
+for item in d.items():
+    print(item)
 
