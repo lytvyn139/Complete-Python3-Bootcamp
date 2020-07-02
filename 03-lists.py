@@ -24,7 +24,7 @@ popped_item = final_list.pop()
 print(popped_item) #six
 print(final_list)
 
-final_list.pop(0)
+final_list.pop(2)
 print(final_list)
 
 print('SORT //')
@@ -56,3 +56,35 @@ l_two = [1,2,{'k1':4}]
 # True or False?
 l_one[2][0] >= l_two[2]['k1']
 #false
+
+print('COUNT //')
+letter_list = ['v', 'x', 'x', 'a', 'k']
+print(letter_list.count('x')) #occurs twice in the list
+
+""" diffrence append/extend """
+print('APPEND //')
+x = [1,2,3,4]
+x.append(letter_list) 
+#[1, 2, 3, 4, ['v', 'x', 'x', 'a', 'k']]
+print(x)
+
+print('EXTEND //')
+x = [1,2,3,4]
+x.extend(letter_list) 
+#[1, 2, 3, 4, 'v', 'x', 'x', 'a', 'k']
+print(x)
+
+print('INDEX //')
+letter_list = ['v', 'x', 'x', 'a', 'k']
+print(letter_list.index('a')) #3
+
+print('INSERT //')
+fruits = ['apple', 'banana', 'cherry']
+fruits.insert(1, "orange")
+print(fruits)
+
+print('REMOVE //') #removes the first appearance of str
+fruits = ['apple', 'banana', 'cherry']
+fruits.remove('banana')
+print(fruits) #['apple', 'cherry']
+

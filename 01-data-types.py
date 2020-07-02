@@ -49,3 +49,10 @@ dog = ('Bruce', 'cocker spaniel', 19, False)
 is_hungry = True
 has_freckles = False
 
+    """ Hexadecimal """
+hex(246) #0xf6
+hex(512) #0x200
+
+    """ Binary """
+bin(1234) #0b10011010010
+bin(128)  #0b10000000
